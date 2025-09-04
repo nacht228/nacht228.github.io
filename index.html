@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Мой первый сайт</title>
+  <meta name="description" content="Личный сайт-визитка. Сделан бесплатно на GitHub Pages." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="logo" href="/">Моё Имя</a>
+        <div class="menu">
+          <a href="#about">Обо мне</a>
+          <a href="#work">Проекты</a>
+          <a href="#contact">Контакты</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Привет! Я только что запустила свой сайт 🚀</h1>
+        <p>Полностью бесплатно на GitHub Pages. Ниже — обо мне и мои проекты.</p>
+        <a class="btn" href="#work">Смотреть проекты</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Обо мне</h2>
+        <p>Пара предложений о себе. Чем занимаюсь, чем могу помочь.</p>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="container">
+        <h2>Проекты</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Проект 1</h3>
+            <p>Короткое описание проекта. Ссылка, если есть.</p>
+          </article>
+          <article class="card">
+            <h3>Проект 2</h3>
+            <p>Короткое описание проекта. Ссылка, если есть.</p>
+          </article>
+          <article class="card">
+            <h3>Проект 3</h3>
+            <p>Короткое описание проекта. Ссылка, если есть.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Контакты</h2>
+        <p>Почта: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>Telegram: <a href="https://t.me/yourname">t.me/yourname</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> Моё Имя</div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
